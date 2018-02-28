@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &172868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422820}
+  - 114: {fileID: 11491284}
+  - 82: {fileID: 8218668}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &422820
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!82 &8218668
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172868}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ca5380e0d02a9b64d8f73d216abfc395, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &11491284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939aa3495a219b7478cc965dc2b34ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnSpots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  circlePrefab: {fileID: 135692, guid: fb4747fe3e7d8244d809ed78e5c2f19d, type: 2}
+  exitPrompt: {fileID: 0}
+  PauseMenuCanvas: {fileID: 0}
+  StartCanvas: {fileID: 0}
+  GameCanvas: {fileID: 0}
+  GameOverCanvas: {fileID: 0}
+  fingers: {fileID: 0}
+  nextAnim: {fileID: 0}
+  prevAnim: {fileID: 0}
+  gameOver: 0
+  possibleSwitch: 0
+  gameStarted: 0
+  ScoreText: {fileID: 0}
+  GemsText: {fileID: 0}
+  gameStartDelay: 1
+  spawnDelay: 0.8
+  updateDifficultyTime: 10
+  hiderTime: 0
+  gameModeSwitchTime: 10
+  gameModeTime: 6
+  score: 0
+  inGameMode: 0
+  tempSpawnDelay: 0
+  maxSpawnSpeed: 9
+  minSpawnTime: 0.4
+  circleSpeed: 6
+  gameMode: 0
+  switchHider: {fileID: 0}
+  spawnPause: 0
+  spawnPauseDelay: 1.5
+  isMedley: 0
+  jewel: {fileID: 147464, guid: 8455f5e92e2fba04e99b634fd52fe7bf, type: 2}
+  spawnJewel: 0
+  spawnJewelTime: 8
+  jewels: 0
+  scrollSnap: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 172868}
+  m_IsPrefabParent: 1
